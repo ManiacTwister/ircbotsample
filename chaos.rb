@@ -200,9 +200,9 @@ client = EventMachine::IRC::Client.new do
       when /wie.*deine.*email/i
         say(target, 'powerbot@sunnata.de warum fragst du '+source+'?')
       when /wie sp\xC3\xA4t/i
-        say(target,"wir haben " + Time.now.to_s[11,5] + "uhr und " + Time.now.to_s[17,2] + " sekunden, " + source)
+        say(target,"wir haben " + Time.now.to_s[11,5] + "Uhr und " + Time.now.to_s[17,2] + " Sekunden, " + source)
       when ma(zeit)
-        say(target,"wir haben " + Time.now.to_s[11,5] + "uhr und " + Time.now.to_s[17,2] + " sekunden, " + source)
+        say(target,"wir haben " + Time.now.to_s[11,5] + "Uhr und " + Time.now.to_s[17,2] + " Sekunden, " + source)
       when /datum/i
         datum=kal
         0.upto(datum.length) { |i|
