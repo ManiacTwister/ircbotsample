@@ -81,8 +81,6 @@ client = EventMachine::IRC::Client.new do
       $opqueque[who][channel] ||= channel
       privmsg("nickserv", "acc "+who) # request identification status
       say(channel, say_hi+who)
-    else
-      say(channel,"hi") # wenn nicht:)
     end
     if $notice.has_key?(who.downcase) then
       $notice[who].each { |bywho,msg| say(who,msg) }
